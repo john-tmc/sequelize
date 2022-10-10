@@ -1670,7 +1670,7 @@ export function or<T extends any[]>(...args: T): { [Op.or]: T };
  * @param value An optional value to compare against.
  *   Produces a string of the form "&lt;json path&gt; = '&lt;value&gt;'".
  */
-export function json(conditionsOrPath: string | object, value?: string | number | boolean): Json;
+export function json(conditionsOrPath: string | object, value?: string | number | boolean): string;
 
 export type WhereLeftOperand = Fn | ColumnReference | Literal | Cast | ModelAttributeColumnOptions;
 
